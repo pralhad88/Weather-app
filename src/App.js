@@ -3,7 +3,7 @@ import './App.css';
 import Header from './component/Header';
 import SearchBox from './component/searchBox';
 
-function App() {
+function App() { // Parent Component 
   return (
     <div className="App" >
       <Header />

@@ -4,8 +4,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
-export default function Header() {
-  return (
+export default function Header() { // Created functional based component for app header.
+  return ( 
     <div className="appbarwrapper">
     <AppBar position="fixed">
       <Toolbar>
@@ -14,15 +14,18 @@ export default function Header() {
           container
         >
           <Grid item>
+            <a href="#">
             <Button color="inherit">
               Logo
           </Button>
+          </a>
           </Grid>
           <Grid item>
-            <div>
-              <Button color="inherit">Home</Button>
-              <Button color="inherit">About Us</Button>
-              <Button color="inherit">Contact Us</Button>
+            <div
+            > 
+              <a href="#"><Button color="inherit">Home</Button></a> 
+              <a href="#"> <Button color="inherit">About Us</Button></a>
+              <a href="#"><Button color="inherit">Contact Us</Button></a>
             </div>
           </Grid>
         </Grid>

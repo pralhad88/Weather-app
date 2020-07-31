@@ -11,14 +11,17 @@ import Moment from 'react-moment';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
-    marginTop: theme.spacing(4),
+    marginTop: theme.spacing(2),
   },
 }));
 
 
-export default function WeatherDetails({ weatherDetails, cityName }) {
+export default function WeatherDetails({ weatherDetails, cityName }) { 
 
-  const classes = useStyles();
+  // took weatherDetails and cityName from parent component to display the weather details
+  
+  const classes = useStyles(); // used material ui internal styling
+  
   return (
     <div>
       <Grid
@@ -28,7 +31,7 @@ export default function WeatherDetails({ weatherDetails, cityName }) {
         justify="flex-start"
         alignItems="flex-start"
       >
-        {weatherDetails.map((item) => <Grid item xs={12} sm={6} md={3} key={item.dt}>
+        {weatherDetails.map((item) => <Grid item xs={12} sm={6} md={3} key={item.dt}> 
           <Card className={classes.root} style={{backgroundColor: Math.round(item.main.temp - 273.15) > 16 ? "#f54029": "#A0E6FF" }}>
             <CardActionArea>
               <CardContent>
@@ -60,7 +63,7 @@ export default function WeatherDetails({ weatherDetails, cityName }) {
               >
                 <Grid style={{height: 100 ,alignItems: 'center'}} >
                   <Typography style={{fontSize: 60}}>
-                    {Math.round(item.main.temp - 273.15)}<span className="temp">&#176;</span> C
+                  {Math.round(item.main.temp - 273.15)}<span className="temp">&#176;</span>C
                   </Typography>
                 </Grid>
                 <Grid

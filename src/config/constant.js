@@ -1,3 +1,4 @@
+// defined city names in a arry to autosuggest their names
 const cities = [
     "Mumbai", "Delhi", "Kolkata", "Chennai", "Bangalore", "Hyderabad", "Ahmedabad", "Pune", "Surat", "Jaipur", "Kanpur", "Lucknow", "Nagpur", "Ghaziabad", "Indore", "Coimbatore", "Kochi", "Patna", 
     "Kozhikode", "Bhopal", "Thrissur", "Vadodara", "Agra", "Visakhapatnam", "Malappuram", "Thiruvananthapuram", "Kannur", "Ludhiana", "Nashik", "Vijayawada", 
